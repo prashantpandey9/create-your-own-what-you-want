@@ -9,3 +9,7 @@ Simple Rules:
     * Update, if any update in any code.
     * Add, if you are adding new code.
     * Remove, if you want to remove something(not suggested!).
+
+
+## Contributing
+From now on please add your programs/codes on a specific folders of their respective language domain.
