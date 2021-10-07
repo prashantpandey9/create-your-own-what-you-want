@@ -2,7 +2,7 @@
 using namespace std;
 
 int main()
-{
+{ 
     string s1, s2;
 
     cout << "Enter string s1: ";
