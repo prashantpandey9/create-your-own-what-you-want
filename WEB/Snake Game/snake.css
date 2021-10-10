@@ -1,0 +1,31 @@
+
+/* styling our body of the game*/
+body
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+/* styling the canvas , where our main game is */
+canvas
+{
+    box-shadow: black 20px 10px 50px;
+}
+
+/* dimension of our game */
+#game
+{
+    width: 600px;
+    height: 600px;
+}
