@@ -28,7 +28,7 @@
 
 ## Rules To Contribute To This Repo
 
--   You have to create a any program/code snippet, or you just add your own html, css webpage to a seperate folder.
+-   You have to create any program/code snippet, or you can just add your own html, css webpage to a seperate folder.
 -   You should not copy other's code.
 -   You can create as many PR's, but they should be unique.
 
