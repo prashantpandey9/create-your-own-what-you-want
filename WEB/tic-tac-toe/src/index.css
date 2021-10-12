@@ -1,0 +1,58 @@
+ body {
+  background-color: #444;
+  color: #fff;
+  margin: 20px;
+  font: 32px "Century Gothic", Futura, sans-serif;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+
+.board-row{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.square{
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #999;
+  padding: 0;
+  font-size: 84px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.square:focus{
+  outline: none;
+  background-color: #222;
+}
+
+.status{
+  margin: 20px 0;
+  font-size: 35px;
+}
+
+.X{
+  color: rgb(231, 0, 0);
+}
+
+.O{
+  color: rgb(255, 208, 0);
+}
+
+.reset{
+  border: none;
+  padding: 5px 10px;
+  margin: 20px 0;
+  align-items: center;
+  font-size: 24px;
+  background-color: #444;
+  color: #fff;
+}
+
