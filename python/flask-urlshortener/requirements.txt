@@ -1,0 +1,7 @@
+Flask
+Flask-MySQLdb
+Flask
+gunicorn
+DateTime
+pytz
+sockets
