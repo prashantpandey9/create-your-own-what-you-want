@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ul li{
+    list-style: none;
+}
+
+.col-md-4 a:hover{
+    background-color: #03162b;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.unamed img{
+    width: 100%;
+    height: 400px;
+}
+.size img{
+    width: auto;
+    height: 100%;
+}
+.top img{
+    width: 100%;
+    height: 500px;
+}
+.main-card{
+    margin: 30px;
+    flex-direction: row !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+}
+.fa-truck{
+    font-size: 50px !important;
+    color: rgb(47, 47, 116);
+
+}
+.fa-user{
+    font-size: 50px !important;
+    color: rgb(47, 47, 116);
+}
+.fa-thumbs-up{
+    font-size: 50px !important;
+    color: rgb(47, 47, 116);
+}
+
+.cart1,.cart2,.cart3{
+    display: flex;
+    height: 100px;
+    width: 30%;
+    background-color: white;
+    box-shadow: 2px 4px 5px  grey;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.arrival img{
+    width: 100%;
+    height: auto;
+    
+}
+.footer{
+    background-color:#25272e !important;
+}
+.carousel-item img{
+    width: auto;
+    height: 500px;
+
+
+}
+.sale img{
+    width: 100%;
+    height: 300px;
+}
+.features{
+    flex-wrap: wrap !important;
+}
