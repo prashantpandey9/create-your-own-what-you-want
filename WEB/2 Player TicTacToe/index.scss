@@ -1,0 +1,109 @@
+$bgimage: url(https://picsum.photos/1920/1080);
+body {
+  background-image: $bgimage;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+}
+.game {
+  margin: auto;
+  width: fit-content;
+  .box {
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: rgb(73, 73, 73);
+    font-size: 60px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    // color: black;
+    font-weight: bold;
+  }
+}
+.headings {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  $rad: 20px;
+  border-bottom-left-radius: $rad;
+  border-bottom-right-radius: $rad;
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: $rad;
+    border-bottom-right-radius: $rad;
+  }
+  h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@mixin cent {
+  width: fit-content;
+  margin: auto;
+}
+.info {
+  @include cent;
+  font-size: 20px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+  #p1 {
+    span {
+      color: red;
+    }
+    // display: none;
+  }
+  #p2 {
+    span {
+      color: blue;
+    }
+  }
+}
+#go {
+  @include cent;
+  display: none;
+  color: whitesmoke;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+.win {
+  @include cent;
+  color: whitesmoke;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+
+  #w1 {
+    span {
+      color: red;
+    }
+  }
+  #w2 {
+    span {
+      color: blue;
+    }
+  }
+}
+button {
+  background-color: rgba(0, 0, 0, 0.75); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
