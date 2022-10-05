@@ -1,0 +1,86 @@
+# HANGMAN
+import random
+from pathlib import Path
+
+
+def hanged(number):
+    if number == 1:
+        print('''\
+            +---+
+            O   |
+                |
+                |
+               ===''')
+    if number == 2:
+        print('''\
+            +---+
+            O   |
+            |   |
+                |
+               ===''')
+    if number == 3:
+        print('''\
+            +---+
+            O   |
+           /|   |
+                |
+               ===''')
+    if number == 4:
+        print('''\
+            +---+
+            O   |
+           /|\  |
+                |
+               ===''')
+    if number == 5:
+        print('''\
+            +---+
+            O   |
+           /|\  |
+           /    |
+              ===''')
+    if number == 6:
+        print('''\
+            +---+
+            O   |
+           /|\  |
+           / \  |
+               ===''')
+
+
+word_list = [word for word in Path("words.txt").read_text().splitlines()]
+word = random.choice(word_list)
+guess_list = ["_" for i in word]
+guessed = []
+tries = 0
+print("You must guess each letter in the word given to you")
+print("Or else, you will be responsible for the murder of little Timmy")
+print('''\
+        +---+
+            |
+            |
+            |
+          ===''')
+
+while tries < 6:
+    guess = input("Enter your letter: ").lower()
+    if len(guess) != 1 or guess.isalpha is False:
+        print("Invalid Input: Please enter a letter")
+        continue
+    elif guess in guessed:
+        print("You have already guessed this letter")
+        continue
+    else:
+        guessed.append(guess)
+        if word.count(guess) == 0:
+            tries += 1
+            hanged(tries)
+        for i in range(len(word)):
+            if word[i] == guess:
+                guess_list[i] = guess
+    if "_" not in guess_list:
+        print(f"YOU HAVE WON!!\nThe word was: {word}")
+        break
+    print(" ".join(guess_list))
+else:
+    print(f"You lost :(\nThe word was: {word}")
