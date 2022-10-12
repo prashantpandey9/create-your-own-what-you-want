@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="headings">
+      <h1>Tic-Tac-Toe</h1>
+      <h2 id="dis">Click on a square to start</h2>
+    </div>
+    <div class="game">
+      <input type="text" class="box" id="1" onclick="rungame(id)" />
+      <input type="text" class="box" id="2" onclick="rungame(id)" />
+      <input type="text" class="box" id="3" onclick="rungame(id)" /><br />
+      <input type="text" class="box" id="4" onclick="rungame(id)" />
+      <input type="text" class="box" id="5" onclick="rungame(id)" />
+      <input type="text" class="box" id="6" onclick="rungame(id)" /><br />
+      <input type="text" class="box" id="7" onclick="rungame(id)" />
+      <input type="text" class="box" id="8" onclick="rungame(id)" />
+      <input type="text" class="box" id="9" onclick="rungame(id)" />
+    </div>
+    <div class="info">
+      <h3 id="p1">Player <span>X</span>'s turn</h3>
+      <h3 id="p2">Player <span>O</span>'s turn</h3>
+      <div class="takeback">
+        <button id="tb" style="display: none" onclick="takeBack()">
+          Take Back
+        </button>
+      </div>
+    </div>
+
+    <h3 id="go">Game Over!</h3>
+    <div class="win">
+      <h3 style="display: none" id="w1">Player <span>X</span> won!</h3>
+      <h3 style="display: none" id="w2">Player <span>O</span> won!</h3>
+      <h3 style="display: none" id="w0">Draw</h3>
+      <button style="display: none" id="again" onclick="playAgain()">
+        Play Again!
+      </button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
